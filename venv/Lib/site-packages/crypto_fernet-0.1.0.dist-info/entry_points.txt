@@ -1,0 +1,3 @@
+[console_scripts]
+crypto_fernet = crypto_fernet.crypto_fernet:main
+
