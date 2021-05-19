@@ -1,6 +1,6 @@
 # 💻 Érebos
 
-Projeto desenvolvido para o trabalho referente ao 4° bimestre da matéria de Sistema Operacionais
+Projeto desenvolvido para o trabalho referente ao 4° bimestre da matéria de Sistemas Operacionais
 
 ## 📐 Curso técnico de Informática UTFPR
 
