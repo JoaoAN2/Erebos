@@ -28,4 +28,4 @@ Comunicação entre dois ou mais client - Server, utilizando a biblioteca socket
 
 Bate-papo utilizando socket como conexão entre os usuários, mensagens criptografadas pela biblioteca `cryptography.fernet`
 
-## [MIT License](/LICENSE)
+## 📄 [MIT License](/LICENSE)
