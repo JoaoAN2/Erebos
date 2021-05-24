@@ -28,8 +28,8 @@ def reciveMsg():
     global kill_bool
     while True:
         msgBytes, serverIP = client.recvfrom(BUFFSIZE)
-        decryptedmsg = crypto.decrypt(msgBytes)
-        print(decryptedmsg.decode('utf8'))
+        decryptedmsg = crypto.decrypt(msgBytes).decode('utf8')
+        print(decryptedmsg)
         if kill_bool:
             break
 
