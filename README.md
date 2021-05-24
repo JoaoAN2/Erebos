@@ -22,8 +22,10 @@ Comunicação entre dois ou mais client - Server, utilizando a biblioteca socket
 
  🐧🍎 Ou no terminal Linux/MacOS: `pip3 install cryptography`
 
-### Trabalho
+## Trabalho
 
- Trabalho desenvolvido em Python
+ Trabalho desenvolvido em Python 🐍
 
-  Bate-papo utilizando socket como conexão entre os usuários, mensagens criptografadas pela biblioteca `cryptography.fernet`
+Bate-papo utilizando socket como conexão entre os usuários, mensagens criptografadas pela biblioteca `cryptography.fernet`
+
+## [MIT License](/LICENSE)

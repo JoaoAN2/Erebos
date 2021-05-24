@@ -13,15 +13,15 @@ def serverSide():
     while True:
         while True:
             try:
-                msgBytes, clientIP = server.recvfrom(BUFFSIZE)
+                msgBytes, clientIP = server.recvfrom(BUFFSIZE) # Receber mensagem e IP
                 break
             except:
                 pass
-        msgAnswer = msgBytes.decode('utf8')
+        msgAnswer = msgBytes.decode('utf-8')
         token = msgAnswer[-1]
         if token == '0':
             ipA.append(clientIP[0])
-            ipB.append(clientIP[1])
+            ipB.append(clientIP[1]) # Adicionar os IPs as listas
             removeTokenandSendMessage(msgAnswer)
 
         else:
@@ -30,7 +30,7 @@ def serverSide():
                 for i in range(0, len(ipA)):
                     if ipA[i] == clientIP[0] and ipB[i] == clientIP[1]:
                         del ipA[i]
-                        del ipB[i]
+                        del ipB[i] # Deletar IP do usuário da lista
                         print('Usuário removido com sucesso')
                         break
         print(msgAnswer)

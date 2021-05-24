@@ -3,7 +3,8 @@ import socket
 import threading
 from time import sleep
 from random import randint
-from cryptography.fernet import Fernet  # CMD Command: pip install cryptography
+from cryptography.fernet import Fernet
+# CMD Command: pip install cryptography
 # Linux Terminal/MACOS: pip3 install cryptography
 
 
@@ -42,7 +43,7 @@ def clientSide(address):
             msg = f'\033[1;36m>>ENTROU \033[m'
             token = '0'
         else:
-            sleep(0.0001)
+            sleep(0.0001) # Sincronizar
             msg = input()
             token = '1'
             if msg == kill_var:
@@ -50,7 +51,7 @@ def clientSide(address):
                 kill_bool = True
                 token = '2'
         decryptedmsg = format(msg)
-        encryptedmsg =  f' {crypto.encrypt(bytes(decryptedmsg.encode("utf8"))).decode("utf8")}'
+        encryptedmsg =  f' {crypto.encrypt(bytes(decryptedmsg.encode("utf8"))).decode("utf8")}' # Mensagem criptografada
         msgsend = encryptedmsg + token
         client.sendto(msgsend.encode('utf8'), address)
         cont += 1
@@ -60,15 +61,15 @@ def clientSide(address):
 
 name = ''
 cont = 0
-kill_var = '/exit'
+kill_var = '/exit'  # Encerramento
 kill_bool = False
-BUFFSIZE = 16384
-HOST = getIP()
+BUFFSIZE = 16384  # = 2^14
+HOST = getIP() # IPv4
 PORT = 12000  # Porta desejada
-ADDR = (HOST, PORT)
+ADDR = (HOST, PORT) # Tupla IP/Porta
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-crypto = crypto_tolls()
+crypto = crypto_tolls()  # Ferramentas de criptografia
 
 ClientSideThread = threading.Thread(target=clientSide, args=(ADDR,))
 ClientReciveThread = threading.Thread(target=reciveMsg)
