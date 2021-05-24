@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43c10302-65eb-4af6-967c-05b3649974c3" name="Default Changelist" comment="" />
+    <list default="true" id="43c10302-65eb-4af6-967c-05b3649974c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ClientSide.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ClientSide.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +25,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Scripts/ServerSide.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.ServerSide">
+  <component name="RunManager" selected="Python.ClientSide">
     <configuration name="ClientSide" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="SO" />
       <option name="INTERPRETER_OPTIONS" value="" />

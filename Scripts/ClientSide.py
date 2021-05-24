@@ -28,7 +28,7 @@ def reciveMsg():
     global kill_bool
     while True:
         msgBytes, serverIP = client.recvfrom(BUFFSIZE)
-        decryptedmsg = crypto.decrypt(msgBytes).decode('utf8')
+        decryptedmsg = crypto.decrypt(msgBytes).decode(character)
         print(decryptedmsg)
         if kill_bool:
             break
@@ -51,9 +51,9 @@ def clientSide(address):
                 kill_bool = True
                 token = '2'
         decryptedmsg = format(msg)
-        encryptedmsg =  f' {crypto.encrypt(bytes(decryptedmsg.encode("utf-8"))).decode("utf8")}' # Mensagem criptografada
+        encryptedmsg = crypto.encrypt(decryptedmsg.encode(character)).decode(character) # Mensagem criptografada
         msgsend = encryptedmsg + token
-        client.sendto(msgsend.encode('utf8'), address)
+        client.sendto(msgsend.encode(character), address)
         cont += 1
         if kill_bool:
             break
@@ -68,6 +68,7 @@ HOST = getIP() # IPv4
 PORT = 12000  # Porta desejada
 ADDR = (HOST, PORT) # Tupla IP/Porta
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+character = "utf-8"
 
 crypto = crypto_tolls()  # Ferramentas de criptografia
 

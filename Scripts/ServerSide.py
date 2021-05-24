@@ -5,7 +5,7 @@ import threading
 def removeTokenandSendMessage(encryptedmsg):
     msg = encryptedmsg[0:-1]
     for i in range(0, len(ipA)):
-        server.sendto(msg.encode('utf8'), (ipA[i], ipB[i]))
+        server.sendto(msg.encode(character), (ipA[i], ipB[i]))
 
 
 def serverSide():
@@ -17,7 +17,7 @@ def serverSide():
                 break
             except:
                 pass
-        msgAnswer = msgBytes.decode('utf-8')
+        msgAnswer = msgBytes.decode(character)
         token = msgAnswer[-1]
         if token == '0':
             ipA.append(clientIP[0])
@@ -41,6 +41,8 @@ BUFFSIZE = 16384
 HOST = ''
 PORT = 12000
 ADDR = (HOST, PORT)
+
+character = "utf-8"
 
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server.bind(ADDR)
