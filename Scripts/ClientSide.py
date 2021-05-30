@@ -51,9 +51,9 @@ def clientSide(address):
                 kill_bool = True
                 token = '2'
         decryptedmsg = format(msg)
-        encryptedmsg = crypto.encrypt(decryptedmsg.encode(character)).decode(character) # Mensagem criptografada
-        msgsend = encryptedmsg + token
-        client.sendto(msgsend.encode(character), address)
+        encryptedmsg = crypto.encrypt(decryptedmsg.encode(character)) # Mensagem criptografada
+        msgsend = encryptedmsg + token.encode(character)
+        client.sendto(msgsend, address)
         cont += 1
         if kill_bool:
             break
