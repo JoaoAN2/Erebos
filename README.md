@@ -31,7 +31,8 @@ Bate-papo utilizando socket como conexão entre os usuários, mensagens criptogr
 ## 👾 Projeto funcionando
 
 Exemplo das mensagens passando pelo servidor e sendo distribuídas na conversa entre dois usuários. Ao final os usuários se desconectam utilizando `/exit`.
-
-<img src="./.github/run.gif">
+<div align="center">
+    <img src="./.github/run.gif" >
+</div>
 
 ## 📄 [MIT License](/LICENSE)
