@@ -24,8 +24,14 @@ Comunicação entre dois ou mais client - Server, utilizando a biblioteca socket
 
 ## Trabalho
 
- Trabalho desenvolvido em Python 🐍
+Trabalho desenvolvido em Python 🐍
 
 Bate-papo utilizando socket como conexão entre os usuários, mensagens criptografadas pela biblioteca `cryptography.fernet`
+
+## 👾 Projeto funcionando
+
+Exemplo das mensagens passando pelo servidor e sendo distribuídas na conversa entre dois usuários. Ao final os usuários se desconectam utilizando `/exit`.
+
+<img src="./.github/run.gif">
 
 ## 📄 [MIT License](/LICENSE)
