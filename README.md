@@ -35,7 +35,9 @@ Exemplo das mensagens passando pelo servidor e sendo distribuídas na conversa e
     <img src="./.github/run.gif" >
 </div>
 
-## 📄 [MIT License](/LICENSE)
+## 📝 Mit license
+
+Mais detalhes: [License](/LICENSE)
 
 ---
 <div align = "center">Feito pelo aluno João Augusto do Nascimento ❤</div>
