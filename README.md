@@ -36,3 +36,6 @@ Exemplo das mensagens passando pelo servidor e sendo distribuídas na conversa e
 </div>
 
 ## 📄 [MIT License](/LICENSE)
+
+---
+<div align = "center">Feito pelo aluno João Augusto do Nascimento ❤</div>
