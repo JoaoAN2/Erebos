@@ -40,4 +40,4 @@ Exemplo das mensagens passando pelo servidor e sendo distribuídas na conversa e
 Mais detalhes: [License](/LICENSE)
 
 ---
-<div align = "center">Feito pelo aluno <a href="https://github.com/JoaoAN2">João Augusto do Nascimento</a> e <a href="https://github.com/MateusCohuzer">Mateus Cohuzer</a> ❤</div>
+<div align = "center">Feito pelos alunos <a href="https://github.com/JoaoAN2">João Augusto do Nascimento</a> e <a href="https://github.com/MateusCohuzer">Mateus Cohuzer</a> ❤</div>
